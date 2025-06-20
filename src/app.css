@@ -10,6 +10,7 @@ body{
     background-color: #0c0c1d;
     color: lightgrey;
     cursor: default;
+    overflow-x: hidden;
 }
 
 html{

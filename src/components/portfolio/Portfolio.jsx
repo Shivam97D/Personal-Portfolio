@@ -56,6 +56,7 @@ const Wow = ({ item }) => {
 const Portfolio = () => {
   const ref = useRef();
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true); // 🔹 New state for loader
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -77,7 +78,10 @@ const Portfolio = () => {
         }
         return res.json();
       })
-      .then((data) => setProjects(data))
+      .then((data) =>{
+        setProjects(data);
+        setLoading(false); // 🟢 Data fetched
+      } )
       .catch((err) => {
         console.error("Error fetching projects:", err);
 
@@ -119,6 +123,7 @@ const Portfolio = () => {
             img: "/hackers terminal.png",
           },
         ]);
+        setLoading(false); // 🟢 Even if fallback used
       });
   }, []);
 
@@ -132,9 +137,15 @@ const Portfolio = () => {
         ></motion.div>
       </div>
 
-      {projects.map((pro) => (
-        <Wow item={pro} key={pro.id} />
-      ))}
+      {loading ? (
+        <section className="loader-container">
+          <div className="loaderr"></div> 
+        </section>
+      ) : (
+        projects.map((pro) => <Wow item={pro} key={pro.id} />)
+      )}
+
+
     </div>
   );
 };
