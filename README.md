@@ -25,8 +25,8 @@ An elegant and dynamic portfolio website built using **React**, **Framer Motion*
 
 ## 🚀 Live Demo
 
-🔗 Frontend: [https://your-frontend-link.netlify.app](https://your-frontend-link.netlify.app)  
-🔗 Backend: [https://portfolio-backend-ie49.onrender.com](https://portfolio-backend-ie49.onrender.com)
+🔗 Frontend: [https://personal-portfolio-oqpn.onrender.com/](https://personal-portfolio-oqpn.onrender.com/)  
+🔗 Backend: [https://portfolio-backend-ie49.onrender.com/](https://portfolio-backend-ie49.onrender.com/)
 
 ---
 
