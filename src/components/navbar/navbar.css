@@ -1,0 +1,40 @@
+
+.navbar{
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* max-width: 1366px; */
+    max-width: 70vw;
+    height: 100px;
+    margin: auto;
+}
+
+.logo , .social-links{
+    /* background-color: orange; */
+    margin: auto 20px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links > a {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.social-links > a > img{
+    width: 29px;
+}
+
+.social-links > a > img:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2)  ;
+}
+
+
+.github{
+    border-radius: 50px;
+}

@@ -1,0 +1,368 @@
+.services{
+    height: 100vh;
+    /* width: 100vw; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 360deg , #111132 , #0c0c1d);
+}
+
+.services-info{
+    flex: 1;
+    display: flex;
+    /* background-color: orange; */
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.services-info > hr {
+    position: absolute;
+    left: 90vw;
+    width: 8vw;
+    overflow: hidden;
+}
+
+.services-role{
+    margin-right: 130px ;
+}
+
+.servises-main{
+    flex: 2 ;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 255, 0.17); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.services-up{
+ /* background-color: orange;    */
+ /* height: 100% ; */
+ width: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly ;
+ /* color: black; */
+}
+
+.services-img-container{
+    height: 80px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.services-img-container > img {
+    /* width: 100px;
+    height: 90% ; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-span{
+    font-weight: bolder;
+    /* font-size: 50px ; */
+    margin-right: 20px;
+}
+
+.services-down{
+ /* background-color: orange;    */
+ height: 50% ;
+ display:flex ;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+
+
+.services-button {
+  background: linear-gradient(120deg, #ffffff, #70cb6a, #f8aa00);
+    position: relative;
+    overflow: hidden;
+    padding: 20px 55px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.3);
+    transform: scale(1);
+}
+
+
+.services-button::before {
+  content: "Get the work done";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ff8a00, #e52e71, #9b00ff);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.services-button:hover::before {
+  left: 0;
+}
+
+.services-button span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+.services-bottom{
+    flex: 2;
+    /* background-color: orange; */
+    display: flex;
+    align-items: end ;
+    justify-content: center;
+}
+
+.card{
+    /* background-color: aqua; */
+    background-color: transparent;
+    width: 270px;
+    padding: 20px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px ;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    gap: 10px;
+    border: 0.5px solid gray;
+    /* cursor: pointer; */
+}
+
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, rgb(91, 223, 230), rgb(49, 98, 189),rgb(91, 223, 230));
+  z-index: -1;
+  opacity: 0;
+  transition:  opacity 1s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+  filter: blur(10px);
+}
+
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(255, 165, 0, 0.3);
+}
+
+
+
+
+
+
+.card-head{
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+
+.card-desc{
+    /* noting */
+}
+
+/* .card-button{
+    background-color: orange;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px ;
+}
+
+.card-button:hover{
+    background-color: orange;
+    border-radius: 50% 0%;
+}
+ */
+
+ .card-button {
+    background-color: orange;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Cool hover effect: expand highlight and scale */
+.card-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb347;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.card-button:hover::before {
+    left: 0;
+}
+
+.card-button:hover {
+    color: rgb(134, 74, 193);
+    transform: scale(1.05);
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+  .services {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .services-info {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .services-info > hr {
+    display: none;
+  }
+
+  .services-role {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .servises-main {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .services-up {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .services-img-container {
+    width: 200px;
+    height: 70px;
+  }
+
+  .services-down {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .services-button {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+
+  .services-bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the style to get teh sliding button effect */
+
+
+/* .services-button {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 28px;
+  background: #222;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ff8a00, #e52e71, #9b00ff);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.services-button:hover::before {
+  left: 0;
+}
+
+.services-button span {
+  position: relative;
+  z-index: 1;
+} */

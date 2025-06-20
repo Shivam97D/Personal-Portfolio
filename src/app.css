@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans" , sans-serif;
+}
+
+
+body{
+    background-color: #0c0c1d;
+    color: lightgrey;
+    cursor: default;
+}
+
+html{
+    scroll-behavior:  smooth 2s;
+    scroll-snap-type: y  mandatory;
+    scroll-behavior: smooth;
+}
+
+section{
+    overflow-x: hidden;
+    height: 100vh;
+    /* width: 100vw; */
+    scroll-snap-align: center ;
+    /* border: 3px solid black; */
+}
+
+.para-parent{
+    position: relative;
+}
+
+
+a{
+    text-decoration: none;
+    /* color: lightgrey; */
+    color: inherit;
+}
+
+
+sidebar{
+    background-color: orange;
+}
+
+
+
+.main-scroll-top{
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    z-index: 100;
+    width: 20px ;
+    height: 20px ;
+    scale: 2;
+    color: orange;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}

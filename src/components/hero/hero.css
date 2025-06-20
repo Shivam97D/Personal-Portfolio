@@ -1,0 +1,239 @@
+.hero-container{
+    /* width: 100vw; */
+    /* background-color: orange; */
+    height: calc( 100vh - 100px ) ;
+    background:  linear-gradient( 180deg , #0c0c1d , #111132);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img{
+    position: absolute;
+    right: 220px ;
+    bottom: 50px ;
+    scale: 1.4   ;
+}
+
+.text-wrapper{
+    /* background-color: orange; */
+    /* max-width: 1366px; */
+    max-width: 70vw;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hero-info{
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.hero-title{
+    color: rebeccapurple;
+    font-size: 30px ;
+    letter-spacing: 8px;
+}
+
+
+.hero-role{
+    /* background-color: aqua; */
+    font-size: 78px ;
+    width: 70%;
+}
+
+.hero-but{
+    /* background-color: orange; */
+    z-index: 10;
+}
+
+.but-pro,
+.but-con {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+/* The gradient animation layer */
+.but-pro::before,
+.but-con::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: white;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* Change color when hovered */
+.but-pro:hover::before,
+.but-con:hover::before {
+  width: 100%;
+}
+
+/* Text color flip */
+.but-pro:hover,
+.but-con:hover {
+  color: black;
+}
+
+/* Optional: tweak border for .but-pro */
+.but-pro {
+  border-color: white;
+  color: white;
+}
+
+.but-pro::before {
+  background: white ;
+}
+
+.but-pro:hover {
+  color: black;
+}
+
+
+
+
+
+
+.scroll-img{
+    /* background-color: orange; */
+    height: 50px;
+    z-index: 1;
+}
+
+.scroll-img > img {
+    height: 35px ;
+    opacity: inherit;
+}
+
+.hero-back-text{
+    font-size: 50vh ;
+    /* font-weight: bold; */
+    color: rgba(255, 255, 255, 0.058);
+    position: absolute;
+    bottom: -10px;
+    white-space: nowrap ;
+    /* z-index: ; */
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    position: relative;
+    width: 100vw;
+    height: calc( 100vh - 100px );
+    padding: 40px 20px 80px 20px;
+  }
+
+  .text-wrapper {
+    /* background-color: orange; */
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+  }
+  
+  .hero-info {
+    gap: 20px;
+    height: 85vh;
+    position: relative;
+    /* background-color: orange; */
+  }
+  
+  .hero-title {
+    margin: 60px 0px 0px 0px ;
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+  
+  .hero-role {
+    font-size: 38px;
+    width: 100%;
+  }
+  
+  .hero-but {
+    display: flex;
+    justify-content: space-evenly;;
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+  
+  .but-pro,
+  .but-con {
+    width: 50vw;
+    font-size: 14px;
+    padding: 10px 36px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .but-pro{
+  background: linear-gradient(120deg, #ff8a00, #e52e71, #9b00ff);
+}
+.but-con{
+  background: linear-gradient(240deg, #59ddc0, #63caea, #1337a3);
+  }
+
+
+  
+  .scroll-img {
+    display: none;
+    height: 40px;
+    margin-top: 30px;
+  }
+  
+  .scroll-img > img {
+    height: 30px;
+  }
+  
+  .hero-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 40px auto 0 auto;
+    display: block;
+    scale: 1;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-back-text {
+    position: absolute;
+    /* background-color: orange; */
+    bottom: 10px ;
+    
+    color: rgba(255, 255, 255, 0.058);
+    font-size: 25vh;
+    bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
