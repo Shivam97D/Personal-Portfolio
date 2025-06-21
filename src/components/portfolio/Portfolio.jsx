@@ -139,6 +139,7 @@ const Portfolio = () => {
 
       {loading ? (
         <section className="loader-container">
+          <div className="loaderrr"></div> 
           <div className="loaderr"></div> 
         </section>
       ) : (

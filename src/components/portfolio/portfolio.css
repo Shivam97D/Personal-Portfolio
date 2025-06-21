@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   /* background-color: orange; */
   overflow-x: hidden;
 }
@@ -37,6 +39,28 @@
 }
 @keyframes l3 {
     50% {left:100%;transform: translateX(calc(-100% - 4px))}
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loaderrr {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color :#0000;
+  overflow: hidden;
+  animation: l9 5s infinite cubic-bezier(0.3,1,0,1);
+}
+.loaderrr:before {
+  content:"Loading..."
+}
+@keyframes l9 {
+  0%  {text-shadow: 0    0 #38ffe1, 11ch 0 #86ff35, 22ch 0 #ff8bfd, 33ch 0 #00eaff,44ch 0 #00ffe5}
+  25% {text-shadow:-11ch 0 #38ffe1,  0ch 0 #86ff35, 11ch 0 #ff8bfd, 22ch 0 #00eaff,33ch 0 #00ffe5}
+  50% {text-shadow:-22ch 0 #38ffe1,-11ch 0 #86ff35,  0ch 0 #ff8bfd, 11ch 0 #00eaff,22ch 0 #00ffe5}
+  75% {text-shadow:-33ch 0 #38ffe1,-22ch 0 #86ff35,-11ch 0 #ff8bfd,  0ch 0 #00eaff,11ch 0 #00ffe5}
+  100%{text-shadow:-44ch 0 #38ffe1,-33ch 0 #86ff35,-22ch 0 #ff8bfd,-11ch 0 #00eaff, 0ch 0 #00ffe5}
 }
 
 

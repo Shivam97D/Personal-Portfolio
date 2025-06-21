@@ -97,13 +97,13 @@ function Hero() {
         className="hero-img"
         src="/shivam4.png"
         alt="The main profile img."
-        onClick={()=>{
-          notify({ type: "success", title: "Great", message: "Projects loaded successfully! " }) ;
-          notify({ type: "error", title: "Error", message: "Failed to load projects!" }) ;
-          notify({ type: "info", title: "Note", message: "Failed to load projects!" }) ;
-          notify({ type: "warning", title: "Alert", message: "Failed to load projects!" }) ;
-          }
-        }
+        // onClick={()=>{
+        //   notify({ type: "success", title: "Great", message: "Projects loaded successfully! " }) ;
+        //   notify({ type: "error", title: "Error", message: "Failed to load projects!" }) ;
+        //   notify({ type: "info", title: "Note", message: "Failed to load projects!" }) ;
+        //   notify({ type: "warning", title: "Alert", message: "Failed to load projects!" }) ;
+        //   }
+        // }
 
       />
     </div>
