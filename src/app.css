@@ -61,3 +61,30 @@ sidebar{
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+/* For modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(100deg, #30d9ff, #ff992c);
+  /* background-color: #7003ff; */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #81e6ff;
+}

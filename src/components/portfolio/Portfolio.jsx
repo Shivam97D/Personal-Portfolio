@@ -3,6 +3,9 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
 const Wow = ({ item }) => {
+
+  console.log('the url is ' , item.url );
+  
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
