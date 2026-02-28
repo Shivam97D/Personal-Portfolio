@@ -14,11 +14,17 @@
     scale: 1.4   ; */
 
 
-    height: 90vh ;
+    /* height: 90vh ;
     position: absolute;
     right: 15vw ;
     bottom: 0px ;
-    scale: 1   ;
+    scale: 1   ; */
+
+    height: 112vh;
+    position: absolute;
+    right: 14vw;
+    bottom: -137px;
+    scale: 1;
 }
 
 .text-wrapper{
@@ -223,8 +229,8 @@
   
   .hero-img {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: -177px;
+    right: 0px ;
     margin: 40px auto 0 auto;
     display: block;
     scale: 1;
