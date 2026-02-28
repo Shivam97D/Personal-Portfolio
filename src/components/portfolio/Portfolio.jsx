@@ -123,7 +123,7 @@ const Portfolio = () => {
             title: "Hacker's Terminal",
             description:
               "An advanced hacker-style terminal in the browser showcasing async behavior and string manipulation in JavaScript.",
-            img: "/hackers terminal.png",
+            img: "/grs terminal.png",
           },
         ]);
         setLoading(false); // 🟢 Even if fallback used

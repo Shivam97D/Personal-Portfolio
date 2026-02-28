@@ -8,10 +8,17 @@
 }
 
 .hero-img{
-    position: absolute;
+    /* position: absolute;
     right: 220px ;
     bottom: 50px ;
-    scale: 1.4   ;
+    scale: 1.4   ; */
+
+
+    height: 90vh ;
+    position: absolute;
+    right: 15vw ;
+    bottom: 0px ;
+    scale: 1   ;
 }
 
 .text-wrapper{

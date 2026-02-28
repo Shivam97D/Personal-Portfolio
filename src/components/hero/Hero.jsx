@@ -95,7 +95,7 @@ function Hero() {
 
       <img
         className="hero-img"
-        src="/shivam4.png"
+        src="/shivam13.png"
         alt="The main profile img."
         // onClick={()=>{
         //   notify({ type: "success", title: "Great", message: "Projects loaded successfully! " }) ;
